@@ -8,9 +8,9 @@ from models import db, connect_db
 
 app = Flask(__name__)
 
-app.config['SECRET_KEY'] = "secret"
+app.config['SECRET_KEY'] = "YOUR_SECRET"
 
-app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql:///adopt"
+app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql:///YOUR_DATABASE_NAME"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 
