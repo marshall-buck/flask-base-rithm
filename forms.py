@@ -3,7 +3,7 @@
 
 from flask_wtf import FlaskForm
 # import your own form types and validators
-from wtforms import StringField
+from wtforms import StringField, TextAreaField
 from wtforms.validators import DataRequired
 
 
