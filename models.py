@@ -3,8 +3,15 @@
 from flask_sqlalchemy import SQLAlchemy
 
 
-
 db = SQLAlchemy()
+
+
+class MyTable(db.Model):
+    """Playlist."""
+
+    __tablename__ = "mytables"
+
+    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
 
 
 def connect_db(app):
